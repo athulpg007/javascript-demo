@@ -1,0 +1,5 @@
+docker run --rm -it --name node-docker -d -e "PORT=3000" -p 8080:3000 node:13-alpine
+
+docker exec -it node-docker /bin/sh
+
+docker cp Documents/javascript-demo/02-datatypes.js 5fe9a28603f8:/02-datatypes.js
